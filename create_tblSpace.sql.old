@@ -1,0 +1,12 @@
+define TBLSPACE_NAME=&1
+define DBFILE=&2
+--
+create tablespace &&TBLSPACE_NAME
+  datafile &&DBFILE
+  size 100M
+  extent management local
+  uniform size 128k
+  segment space management auto;
+--
+-- usage: SQL> @create_tblSpace USERS2 '/opt/oracle/oradata/ORCL/users02.dbf'
+--

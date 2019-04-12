@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# startscen.sh -INSTANCE=$ODI_AGENT $SCENARIO_NAME $VERSION $CONTEXT
+startscen.sh -INSTANCE=OracleDIAgent1 PKG002 001 DEVELOPMENT
+
